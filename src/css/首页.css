@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+ul li{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	height: 3.5rem;
+	background: url("../images/2.jpg") no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.H_nav{
+	width: 100%;
+	height: 0.5rem;
+	background: #cf5565;
+	position: absolute;
+	bottom: 0;
+}
+.H_navCon{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.H_navCon p{
+	width: 2.4rem;
+	color: white;
+	font-size: 16px;
+	line-height: 0.5rem;
+	float: left;
+}
+.H_navCon ul{
+	width: 4.2rem;
+	height: 100%;
+	float: right;
+}
+.H_navCon ul li{
+	float: left;
+	color: white;
+	margin-left: 0.25rem;
+	line-height: 0.5rem;
+	cursor: pointer;
+	text-align: right;
+	font-size: 16px;
+}
+.banner{
+	width: 100%;
+	height: 4.2rem;
+	background: #ffeb8b;
+}
+.B_Con{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.B_C_One{
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+.B_C_One p{
+	width: 100%;
+	height: 0.5rem;
+	text-align: center;
+	color: #c1343f;
+	font-size: 16px;
+	line-height: 0.5rem;
+	margin-top: 0.5rem;
+}
+.B_C_One span{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #c1343f;
+	line-height: 0.4rem;
+	display: block;
+}
+.B_C_One img{
+	display: block;
+	margin: 0.2rem auto 0;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+.Fcon{
+	width: 100%;
+	height: 16rem;
+	background: white;
+}
+.fcon{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.f_left{
+	width: 4.5rem;
+	height: 100%;
+	float: left;
+}
+
+.fl_con{
+	width: 100%;
+	height: 3.7rem;
+	margin-top: 0.5rem;
+}
+.fl_con p{
+	color: #c1343f;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+}
+.fl_con span{
+	display: block;
+	font-size: 14px;
+	color: #333347;
+	margin-top: 0.1rem;
+	line-height: 0.25rem;
+}
+.fl_con span:nth-of-type(2){
+	margin-top: 0.2rem;
+	display: block;
+}
+.fl_cen{
+	width: 100%;
+	height:1.4rem;
+}
+.fl_cen p{
+	color: #c1343f;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+}
+.fl_cen span{
+	display: block;
+	font-size: 14px;
+	color: #333347;
+	margin-top: 0.1rem;
+	line-height: 0.25rem;
+}
+.fl_cen span a:link{
+	text-decoration: none;
+	color: #333347;
+}
+.fl_cen span a:active{
+	color: #333347;
+}
+.fl_cen span a:visited{
+	color: #de4f53;
+}
+.flcnn{
+	width: 100%;
+	height:1.8rem;
+	margin-top: 0.2rem;
+}
+.flcnn p{
+	color: #c1343f;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+}
+.flcnn ul{
+	width: 100%;
+}
+.flcnn ul li{
+	width: 100%;
+	font-size: 14px;
+	color: #333347;
+	text-indent: 0.2rem;
+	line-height: 0.3rem;
+}
+.flcnn ul li b{
+	margin-right: 0.01rem;
+	margin-left: -0.2rem;
+}
+.f_right{
+	width: 5rem;
+	height: 100%;
+	float: right;
+}
+.rcon{
+	width: 100%;
+	height: 3.1rem;
+	margin-top: 0.5rem;
+}
+.rcon p{
+	color: #c1343f;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+}
+.rcon ul{
+	width: 100%;
+}
+.rcon ul li{
+	width: 100%;
+	font-size: 14px;
+	color: #333347;
+	margin-top: 0.2rem;
+	line-height: 0.3rem;
+}
+.rcon ul li b{
+	margin-right: 0.1rem;
+	height: 0.55rem;
+	display: block;
+	float: left;
+	margin-left: 0.2rem;
+}
+.rctn{
+	width: 100%;
+	height: 1.4rem;
+}
+.rctn p{
+	color: #c1343f;
+	font-size: 18px;
+	width: 100%;
+	font-weight: bold;
+}
+.rctn span{
+	display: block;
+	font-size: 14px;
+	color: #333347;
+	margin-top: 0.1rem;
+	line-height: 0.35rem;
+}
+.R_img{
+	width: 100%;
+	height: 10rem;
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+.R_img img{
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	float: left;
+	border-radius: 10px;
+	margin-left: 0.13rem;
+	margin-top: 0.13rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

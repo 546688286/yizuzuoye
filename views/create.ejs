@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/suibian/css/用户反馈页.css"/>
+    <!--<script type="text/javascript" src="delete.js">
+    	
+    </script>-->
+</head>
+<body>
+<div class="pic"></div>
+<div class="nav">
+    <div class="nav_warp">
+        <span>Roux Meetups</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_warp">
+        <form class="footer_left" action="http://localhost:8081/create" method="POST">
+            <p>Send us feedback</p>
+            <span><strong>Name</strong></span>
+            <input type="text" id="term" name="name" placeholder="Enter your name"/>
+            <span><strong>Title</strong></span>
+            <input type="text" id="defined" name="title" placeholder="Title of your feedback"/>
+            <span><strong>Message</strong></span>
+            <input type="text" name="Message" placeholder="Enter your message,then hit the submit"/>
+            <button>Submit</button>
+        </form>
+        <div class="footer_right">
+            <p>Recent Feedback</p>
+            <div class="one">
+                <% for(var i=0;i<data.length;i++){ %>
+               	 <span>
+                	<button>x</button>
+                	 <%=data[i].name%>
+                	<div><%=data[i].title%></div>
+                </span>
+                <span class="sppan"><%=data[i].Message%></span>
+                <% } %>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>1200){
+                        docEl.style.fontSize = 100 * (clientWidth / 1903) + 'px';
+                    }
+                    else
+                        docEl.style.fontSize = 73.56805044666316  + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

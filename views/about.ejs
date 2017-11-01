@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/suibian/css/即时聊天页.css"/>
+</head>
+<body>
+<div class="pic"></div>
+<div class="nav">
+    <div class="nav_warp">
+        <span>Roux Meetups</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Chat</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_warp">
+        <p>Roux Chat</p>
+        <div class="Message">
+            <div class="Message_Name">
+                <div class="font"><strong>Name</strong></div>
+                <div class="box"><input type="text" placeholder="Enter your name"/></div>
+            </div>
+            <div class="Message_Message">
+                <div class="font"><strong>Message</strong></div>
+                <div class="box"><input type="text" placeholder="Enter a message,then press enter"/><input type="submit" value="Chat"/></div>
+            </div>
+        </div>
+        <input type="textarea" class="textarea" placeholder="Welcome...add your message using the form above"/>
+    </div>
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>1200){
+                        docEl.style.fontSize = 100 * (clientWidth / 1903) + 'px';
+                    }
+                    else
+                        docEl.style.fontSize = 73.56805044666316  + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

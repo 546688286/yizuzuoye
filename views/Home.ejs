@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/suibian/css/首页.css" />
+		<script src="/suibian/css/jquery-1.11.3.min.js"></script>
+	</head>
+	<body id="body">
+		<div class="header">
+			<div class="H_nav">
+				<div class="H_navCon">
+					<p>Roux Meetups</p>
+					<ul>
+						<li>Home</li>
+						<li>Speakrs↓</li>
+						<li id="create">Feedback</li>
+						<li id="about">Chat</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="B_Con">
+				<div class="B_C_One">
+					<p>Art in Full Bllom</p>
+					<span>with lorenzo Garcia</span>
+					<img id="imgone" src="/suibian/images/speakers/Lorenzo_Garcia_tn.jpg">
+				</div>
+				<div class="B_C_One">
+					<p>Art in Full Bllom</p>
+					<span>with lorenzo Garcia</span>
+					<img id="imgtwo" src="/suibian/images/speakers/Hillary_Goldwynn_tn.jpg">
+				</div>
+				<div class="B_C_One">
+					<p>Art in Full Bllom</p>
+					<span>with lorenzo Garcia</span>
+					<img id="imgthree" src="/suibian/images/speakers/Riley_Rewington_tn.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="Fcon">
+			<div class="fcon">
+				<div class="f_left">
+					<div class="fl_con">
+						<p>Who are you?</p>
+						<span>
+							It is really my honor to have this opportunity for a interview, I hope  my graduation in the year of 2003.I spend most of my time on study,i have passed CET4/6 of my major during my school time.  
+						</span>
+						<span>
+							In July 2003, I begin work for a small private company as a technical suppes, so I decided to change my job. And in August 2004,I left QingDao to BeiJing and worked for a foreign enterprise as a automation software test engineer.Because I want to change my working environment,
+						</span>
+					</div>
+					<div class="fl_cen">
+						<p>
+							Get Busy!
+						</p>
+						<span>
+							I think I'm a good team player and I'm a person of great honesty to others. <a href="">Also I am able to work under</a> great pressure. Thank you for <a href="">giving me the chance.</a>
+						</span>
+					</div>
+					<div class="flcnn">
+						<p>
+							Who should come?
+						</p>
+						<ul>
+							<li><b>·</b>It is really my honor to have this opportunity for a interview,</li>
+							<li><b>·</b>Now i will introduce myself briefly </li>
+							<li><b>·</b>I am 26 years old,born in shandong province .</li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_right">
+					<div class="rcon">
+						<p>
+							Who should come?
+						</p>
+						<ul>
+							<li><b>·</b>I spend most of my time on study,and i have acquired basic knowledge</li>
+							<li><b>·</b>August 2004,I left QingDao to BeiJing and worked for a foreign enterpris</li>
+							<li><b>·</b>Because I want to change my working environment, I'd like to find</li>
+						</ul>
+					</div>
+					<div class="rctn">
+						<p>
+							Artwork on display
+						</p>
+						<span>
+							Morover Motorola is a global company, so I feel I can gain the most from working in this kind of company ennvironment.
+						</span>
+					</div>
+					<div class="R_img">
+						<img src="/suibian/images/artwork/Lorenzo_Garcia_01_tn.jpg">
+						<img src="/suibian/images/artwork/Lorenzo_Garcia_02_tn.jpg">
+						<img src="/suibian/images/artwork/Lorenzo_Garcia_03_tn.jpg">
+						<img src="/suibian/images/artwork/Lorenzo_Garcia_04_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_01_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_02_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_03_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_04_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_05_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_06_tn.jpg">
+						<img src="/suibian/images/artwork/Hillary_Goldwynn_07_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_01_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_02_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_03_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_04_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_05_tn.jpg">
+						<img src="/suibian/images/artwork/Riley_Rewington_06_tn.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	    (function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+			  if(clientWidth>1200){
+				   docEl.style.fontSize = 100 * (clientWidth / 1903) + 'px';
+				}
+			   else 	  
+            docEl.style.fontSize = 73.56805044666316  + 'px';
+            };
+
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+      
+		
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#imgone').click(function(){
+			$('#body').load('/keyi/memberthree.ejs')
+		})
+		$('#imgtwo').click(function(){
+			$('#body').load('/keyi/members.ejs')
+		})
+		$('#imgthree').click(function(){
+			$('#body').load('/keyi/membertwo.ejs')
+		})
+		$('#about').click(function(){
+			$('#body').load('/keyi/about.ejs')
+		})
+		$('#create').click(function(){
+			$('#body').load('/keyi/create.ejs')
+		})
+	})
+	
+</script>

@@ -1,0 +1,256 @@
+/* css reset*/
+html {
+    color: #000;
+    background: #FFF;
+    font-family: Microsoft YaHei, sans-serif, Arial, '����';
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, strong {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+var, em, i {
+    font-style: normal;
+}
+
+address, caption, cite, code, dfn, em, th, var, optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del, ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+legend {
+    color: #000;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+input, button, textarea, select {
+    *font-size: 100%;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "...";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button {
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.pic{
+    width: 100%;
+    height: 3rem;
+    background-image: url("../images/2.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #cf5565;
+}
+.nav_warp{
+    width: 10rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav_warp span{
+    font-size: 16px;
+    float: left;
+    color: white;
+    line-height: 0.5rem;
+}
+.nav_warp ul{
+    float: right;
+}
+.nav_warp ul li{
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    line-height: 0.5rem;
+}
+.nav_warp ul li:nth-of-type(1),.nav_warp ul li:nth-of-type(2),.nav_warp ul li:nth-of-type(3){
+    margin-right: 0.42rem;
+}
+.nav_warp a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 6.78rem;
+}
+.footer_warp{
+    width: 10rem;
+    height: 100%;
+    padding-top: 0.34rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.footer_warp p{
+    font-size: 18px;
+    margin-bottom: 0.35rem;
+}
+.Message{
+    width: 100%;
+    height: 1.34rem;
+}
+.Message_Name{
+    width: 100%;
+    height: 0.48rem;
+    margin-bottom: 0.21rem;
+}
+.Message_Name .font{
+    width: 1.8rem;
+    height: 0.48rem;
+    font-size: 0.17rem;
+    line-height: 0.48rem;
+    box-sizing: border-box;
+    float: left;
+    text-align: right;
+    margin-right: 0.2rem;
+}
+.Message_Name .box{
+    float: left;
+    width: 8rem;
+    height: 100%;
+}
+.Message_Name .box input{
+    display: block;
+    width: 8rem;
+    height: 100%;
+    outline: none;
+    border: 1px solid #7e7e7e;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 0.18rem;
+}
+.Message_Message{
+    width: 100%;
+    height: 0.48rem;
+}
+.Message_Message .font{
+    width: 1.8rem;
+    height: 0.48rem;
+    font-size: 0.17rem;
+    line-height: 0.48rem;
+    box-sizing: border-box;
+    float: left;
+    text-align: right;
+    margin-right: 0.2rem;
+}
+.Message_Message .box{
+    float: left;
+    width: 8rem;
+    height: 100%;
+}
+.Message_Message .box input:nth-of-type(1){
+    display: block;
+    width: 7rem;
+    height: 100%;
+    outline: none;
+    border: 1px solid #7e7e7e;
+    box-sizing: border-box;
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    padding-left: 0.18rem;
+}
+.Message_Message .box input:nth-of-type(2){
+    width: 1rem;
+    height: 100%;
+    display: block;
+    float: left;
+    background-color: #5bc0de;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.textarea{
+    width: 100%;
+    height: 2.13rem;
+    border: 1px solid #7e7e7e;
+    border-radius: 5px;
+    padding-left: 0.35rem;
+    box-sizing: border-box;
+    outline: none;
+}
+input{
+    font-size: 0.17rem;
+}
